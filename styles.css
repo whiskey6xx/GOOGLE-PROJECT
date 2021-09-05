@@ -1,12 +1,159 @@
-#CenterOfPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: #222;
 }
 
-#Search-form {
+/* Nav bar styling */
+nav {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: space-between;
 }
+
+a {
+    text-decoration: none;
+    color: #000;
+    margin: 5px 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#nav-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#nav-right {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+ul > a, ul > img {
+    padding: 0 8px;
+}
+
+#apps:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 10px #817e7e;
+}
+
+#sign-in {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    margin-right: 8px;
+    margin-left: 10px;
+    min-width: 96px;
+    padding: 9px 23px;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #1a73e8;
+}
+
+#sign-in:hover {
+    background: cornflowerblue;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    align-items: center;
+}
+
+
+#input-con {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 38px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+}
+
+#input-con:hover {
+    box-shadow: 0 0 10px gainsboro;
+}
+
+#input-con > input {
+    border: none;
+    outline: none;
+    flex-grow: 8;
+}
+
+img:hover {
+    cursor: pointer;
+}
+ #buttons-con {
+     display: flex;
+     padding-top: 54px;
+ }
+
+ #big-logo {
+     padding-bottom: 20px;
+ }
+
+ #big-logo:hover {
+     cursor: auto;
+ }
+
+ button {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border: none;
+    min-width: 54px;
+    height: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #3c4043;
+ }
+
+ button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px gainsboro;
+ }
+
+ /* Footer nav*/
+ footer {
+     background-color: f2f2f2;
+     bottom: 0;
+     width: 100vw;
+     position: fixed;
+ }
+
+/* Responsiveness*/
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #input-con {
+        width: 95vw;
+    }
+}
+
+@media (max-height: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+ 
